@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.css">
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper-4.3.3.min.js"></script>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="banner">
+            <img src="./images/l.png" alt="" class="left">
+            <div class="pic">
+                <img src="./images/pic1.jpg" alt="" class="active">
+                <img src="./images/pic2.jpg" alt="">
+                <img src="./images/pic3.jpg" alt="">
+                <img src="./images/pic4.jpg" alt="">
+                <img src="./images/pic5.jpg" alt="">
+                <img src="./images/pic6.jpg" alt="">
+            </div>
+            <img src="./images/r.png" alt="" class="right">
+            <ul class="list">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./js/require.js" defer="true" async data-main="./js/main"></script>
+<script>
+    var pic = document.querySelector(".pic")
+    var list = document.querySelector(".list")
+    var imgArr = Array.from(pic.children);
+    var liArr = Array.from(list.children);
+    var left = document.querySelector(".left");
+    var right = document.querySelector(".right");
+    var num = 0;
+</script>
+
+</html>
